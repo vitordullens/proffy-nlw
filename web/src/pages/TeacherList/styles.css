@@ -17,6 +17,23 @@
 
 }
 
+#search-teachers button {
+    margin-top: 3.2rem;
+    margin-left: 45%;
+    width: 15%;
+    height: 5.6rem;
+    border-radius: 0.8rem;
+    border: 0;
+    background: var(--color-secundary);
+    color: var(--color-button-text);
+    font: 1.6rem Archivo;
+    transition: 0.2s;
+}
+
+#search-teachers button:hover {
+    background: var(--color-secundary-dark);
+}
+
 @media (min-width: 700px) {
     #page-teacher-list {
         max-width: 100%;
@@ -24,7 +41,7 @@
 
     #search-teachers {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 3fr 3fr 3fr 1.5fr;
         column-gap: 16px;
         position: absolute;
         bottom: -28px;
@@ -33,6 +50,11 @@
     #search-teachers .input-block + .input-block,
     #search-teachers .select-block + .select-block {
         margin-top: 0;
+    }
+
+    #search-teachers button {
+        margin-left: 0;
+        width: 100%;
     }
 
     #page-teacher-list main {
